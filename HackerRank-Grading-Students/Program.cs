@@ -6,6 +6,10 @@ namespace HackerRank_Grading_Students
 {
     class Program
     {
+        public static List<int> GradingStudents(List<int> grades)
+        {
+
+        }
         static void Main(string[] args)
         {
             TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
