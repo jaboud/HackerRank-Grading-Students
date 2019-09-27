@@ -11,7 +11,13 @@ namespace HackerRank_Grading_Students
             //A List using an integer type
             List<int> finalGrades = new List<int>();
 
-
+            foreach (int grade in grades)
+            {
+                //Check the remainder of dividing the original grade with 5 and is less than 3 or if the original grade is less than 38 then we don't round it up.
+                if (grade % 5 < 3 || grade < 38)
+                {
+                    finalGrades.Add(grade);
+                }
         }
         static void Main(string[] args)
         {
