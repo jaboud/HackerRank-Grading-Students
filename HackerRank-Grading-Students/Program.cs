@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace HackerRank_Grading_Students
 {
@@ -6,7 +8,17 @@ namespace HackerRank_Grading_Students
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+            int gradesCount = Convert.ToInt32(Console.ReadLine().Trim());
+
+            List<int> grades = new List<int>();
+
+            for (int i = 0; i < gradesCount; i++)
+            {
+                int gradesItem = Convert.ToInt32(Console.ReadLine().Trim());
+                grades.Add(gradesItem);
+            }
         }
     }
 }
