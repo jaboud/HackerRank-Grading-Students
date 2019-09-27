@@ -8,6 +8,9 @@ namespace HackerRank_Grading_Students
     {
         public static List<int> GradingStudents(List<int> grades)
         {
+            //A List using an integer type
+            List<int> finalGrades = new List<int>();
+
 
         }
         static void Main(string[] args)
